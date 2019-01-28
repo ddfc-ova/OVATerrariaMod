@@ -8,7 +8,7 @@ namespace OVAmod.Items.Weapons
 	public class ShortSword : ModItem
 	{
 		public override void SetStaticDefaults() {
-			Tooltip.SetDefault("This is a moddsed sword.");  //The (English) text shown below your weapon's name
+			Tooltip.SetDefault("This is a modded sword.");  //The (English) text shown below your weapon's name
 		}
 
 		public override void SetDefaults() {
