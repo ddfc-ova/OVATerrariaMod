@@ -206,6 +206,4 @@ namespace OVATerrariaMod.NPCs
             multiplier = 12f;
             randomOffset = 2f;
         }
-        }
     }
-}
