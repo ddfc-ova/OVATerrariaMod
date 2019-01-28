@@ -8,7 +8,7 @@ namespace OVATerrariaMod.NPCs
 	// [AutoloadHead] and npc.townNPC are extremely important and absolutely both necessary for any Town NPC to work at all.
 	[AutoloadHead]
     public class anykey : ModNPC {                                      
-	    public override string Texture => "OVAmod/NPCs/anykey";
+	    public override string Texture => "OVATerrariaMod/NPCs/anykey";
         public override bool Autoload(ref string name) {
             name = "anykey";
             return mod.Properties.Autoload;
