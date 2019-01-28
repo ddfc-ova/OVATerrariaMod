@@ -1,0 +1,10 @@
+/logs
+**/bin/
+**/obj/
+*.user
+*.suo
+*.cache
+*.force
+**/packages/
+**/.vs/
+**/.idea/
