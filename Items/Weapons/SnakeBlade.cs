@@ -1,5 +1,7 @@
 using Terraria.ID;
 using Terraria.ModLoader;
+using Terraria;
+using Microsoft.Xna.Framework;
 
 namespace OVATerrariamod.Items.Weapons
 {
@@ -36,6 +38,10 @@ namespace OVATerrariamod.Items.Weapons
 			recipe.SetResult(this);
 			recipe.AddRecipe();
 		}
-
+		public override void OnHitNPC(Player player, NPC target, int damage, float knockback, bool crit) {
+			// Add Onfire buff to the NPC for 1 second
+			// 60 frames = 1 second
+			target.AddBuff(BuffID.Poisoned, 60);
+		}
 	}
 }
