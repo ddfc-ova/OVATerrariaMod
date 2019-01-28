@@ -13,8 +13,7 @@ namespace OVATerrariaMod.NPCs
             name = "anykey";
             return mod.Properties.Autoload;
         }
-    }
-}
+
         public override void SetStaticDefaults() {
             // DisplayName automatically assigned from .lang files, but the commented line below is the normal approach.
             // DisplayName.SetDefault("Example Person");
@@ -204,3 +203,5 @@ namespace OVATerrariaMod.NPCs
             multiplier = 12f;
             randomOffset = 2f;
         }
+    }
+}
