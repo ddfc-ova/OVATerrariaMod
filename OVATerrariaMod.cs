@@ -5,13 +5,13 @@ using Terraria.Graphics.Effects;
 using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
-using OVAmod.Items;
+using OVATerrariaMod.Items;
 
-namespace OVAmod
+namespace OVATerrariaMod
 {
-    public class OVAmod : Mod
+    public class OVATerrariaMod : Mod
     {
-        public OVAmod()
+        public OVATerrariaMod()
         {
             Properties = new ModProperties()
             {
