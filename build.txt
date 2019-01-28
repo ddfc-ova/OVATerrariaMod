@@ -1,6 +1,6 @@
-author = Calmaxys, Supared and others.
-version = 0.1
-displayName = [WIP] The OVA Mod
+author = Calmaxys, Supared, Deelon and others.
+version = 0.2
+displayName = [WIP] The OVA Mod 
 homepage = 
 hideCode = false
 hideResources = false

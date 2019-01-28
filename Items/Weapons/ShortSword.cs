@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace OVAmod.Items.Weapons
+namespace OVATerrariaMod.Items.Weapons
 {
 	public class ShortSword : ModItem
 	{
