@@ -13,6 +13,8 @@ namespace OVATerrariaMod.NPCs
             name = "anykey";
             return mod.Properties.Autoload;
         }
+    }
+}
 
 
         public override void SetStaticDefaults() {
