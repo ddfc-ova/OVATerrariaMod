@@ -8,7 +8,8 @@ namespace OVATerrariaMod.Items.Weapons
 	public class ModeratorSword : ModItem
 	{
 		public override void SetStaticDefaults() {
-			Tooltip.SetDefault("This is a modded sword.");  //The (English) text shown below your weapon's name
+			DisplayName.SetDefault("Moderator Blade");
+			Tooltip.SetDefault("You feel a strong energy coming from this sword, wishing to keep everything in order.");  //The (English) text shown below your weapon's name
 		}
 
 		public override void SetDefaults() {

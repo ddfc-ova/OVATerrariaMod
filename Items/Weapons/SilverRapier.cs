@@ -8,7 +8,8 @@ namespace OVATerrariaMod.Items.Weapons
 	public class SilverRapier : ModItem
 	{
 		public override void SetStaticDefaults() {
-			Tooltip.SetDefault("This is a modded sword.");  //The (English) text shown below your weapon's name
+			DisplayName.SetDefault("Silver Rapier");
+			Tooltip.SetDefault("A rapier made of silver. What else is new?");  //The (English) text shown below your weapon's name
 		}
 
 		public override void SetDefaults() {

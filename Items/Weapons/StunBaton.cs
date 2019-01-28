@@ -10,7 +10,7 @@ namespace OVATerrariaMod.Items.Weapons
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Stun Baton");
-			Tooltip.SetDefault("This is a modded sword.");  //The (English) text shown below your weapon's name
+			Tooltip.SetDefault("Bzzzzzzzzzzzt!");  //The (English) text shown below your weapon's name
 		}
 
 		public override void SetDefaults()
