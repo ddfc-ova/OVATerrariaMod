@@ -45,3 +45,4 @@ namespace OVATerrariamod.Items.Weapons
 		}
 	}
 }
+
