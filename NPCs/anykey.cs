@@ -195,7 +195,7 @@ namespace OVATerrariaMod.NPCs
         }
 
         public override void TownNPCAttackProj(ref int projType, ref int attackDelay) {
-            projType = mod.ProjectileType("ThePoleProj");
+            projType = mod.ProjectileType("ThePoleProjectile");
             attackDelay = 1;
         }
 

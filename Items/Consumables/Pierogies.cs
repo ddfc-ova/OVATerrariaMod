@@ -8,7 +8,8 @@ namespace OVATerrariaMod.Items.Consumables
     {
         public override void SetStaticDefaults()
         {
-            Tooltip.SetDefault("This is a modded item.");
+            DisplayName.SetDefault("Pierogi");
+            Tooltip.SetDefault("Insert witty joke about the source of any's power here.");
         }
 
         public override void SetDefaults()
