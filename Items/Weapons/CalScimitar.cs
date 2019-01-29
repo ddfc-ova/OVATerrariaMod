@@ -18,7 +18,7 @@ namespace OVATerrariaMod.Items.Weapons
 			item.width = 57;            //Weapon's texture's width
 			item.height = 57;           //Weapon's texture's height
 			item.useTime = 30;          //The time span of using the weapon. Remember in terraria, 60 frames is a second.
-			item.useAnimation = 45;         //The time span of the using animation of the weapon, suggest set it the same as useTime.
+			item.useAnimation = 25;         //The time span of the using animation of the weapon, suggest set it the same as useTime.
 			item.useStyle = 1;          //The use style of weapon, 1 for swinging, 2 for drinking, 3 act like shortsword, 4 for use like life crystal, 5 for use staffs or guns
 			item.knockBack = 10;         //The force of knockback of the weapon. Maximum is 20
 			item.value = Item.buyPrice(gold: 1);           //The value of the weapon
@@ -38,7 +38,7 @@ namespace OVATerrariaMod.Items.Weapons
 		public override void OnHitNPC(Player player, NPC target, int damage, float knockback, bool crit) {
 			// Add Onfire buff to the NPC for 1 second
 			// 60 frames = 1 second
-			target.AddBuff(BuffID.Webbed, 60);
+			target.AddBuff(BuffID.Poisoned, 60);
 		}
 
 		// Star Wrath/Starfury style weapon. Spawn projectiles from sky that aim towards mouse.
