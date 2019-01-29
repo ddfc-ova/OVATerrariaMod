@@ -10,7 +10,7 @@ namespace OVATerrariaMod.NPCs
     public class anykey : ModNPC {                                      
 	    public override string Texture => "OVATerrariaMod/NPCs/anykey";
         public override bool Autoload(ref string name) {
-            name = "anykey";
+            name = "14th";
             return mod.Properties.Autoload;
         }
 
@@ -68,13 +68,13 @@ namespace OVATerrariaMod.NPCs
         public override string TownNPCName() {
             switch (WorldGen.genRand.Next(4)) {
                 case 0:
-                    return "Any";
+                    return "handsome_youngman";
                 case 1:
-                    return "Any";
+                    return "any_key";
                 case 2:
-                    return "Any";
+                    return "made_in_heaven";
                 default:
-                    return "Any";
+                    return "one_dollar";
             }
         }
 
@@ -137,63 +137,16 @@ namespace OVATerrariaMod.NPCs
 
         public override void SetChatButtons(ref string button, ref string button2) {
             button = Language.GetTextValue("LegacyInterface.28");
+        
         }
 
          public override void SetupShop(Chest shop, ref int nextSlot) 
          {
             shop.item[nextSlot].SetDefaults(mod.ItemType("Pierogies"));
-            nextSlot++;}
-           /*  shop.item[nextSlot].SetDefaults(mod.ItemType("EquipMaterial"));
             nextSlot++;
-            shop.item[nextSlot].SetDefaults(mod.ItemType("BossItem"));
+            shop.item[nextSlot].SetDefaults(mod.ItemType("The Pole"));
             nextSlot++;
-            shop.item[nextSlot].SetDefaults(mod.ItemType("ExampleWorkbench"));
-            nextSlot++;
-            shop.item[nextSlot].SetDefaults(mod.ItemType("ExampleChair"));
-            nextSlot++;
-            shop.item[nextSlot].SetDefaults(mod.ItemType("ExampleDoor"));
-            nextSlot++;
-            shop.item[nextSlot].SetDefaults(mod.ItemType("ExampleBed"));
-            nextSlot++;
-            shop.item[nextSlot].SetDefaults(mod.ItemType("ExampleChest"));
-            nextSlot++;
-            shop.item[nextSlot].SetDefaults(mod.ItemType("ExamplePickaxe"));
-            nextSlot++;
-            shop.item[nextSlot].SetDefaults(mod.ItemType("ExampleHamaxe"));
-            nextSlot++;
-            if (Main.LocalPlayer.HasBuff(BuffID.Lifeforce)) {
-                shop.item[nextSlot].SetDefaults(mod.ItemType("ExampleHealingPotion"));
-                nextSlot++;
-            }
-            if (Main.LocalPlayer.GetModPlayer<ExamplePlayer>().ZoneExample && !ExampleMod.exampleServerConfig.DisableExampleWings) {
-                shop.item[nextSlot].SetDefaults(mod.ItemType("ExampleWings"));
-                nextSlot++;
-            }
-            if (Main.moonPhase < 2) {
-                shop.item[nextSlot].SetDefaults(mod.ItemType("ExampleSword"));
-                nextSlot++;
-            }
-            else if (Main.moonPhase < 4) {
-                shop.item[nextSlot].SetDefaults(mod.ItemType("ExampleGun"));
-                nextSlot++;
-                shop.item[nextSlot].SetDefaults(mod.ItemType("ExampleBullet"));
-                nextSlot++;
-            }
-            else if (Main.moonPhase < 6) {
-                shop.item[nextSlot].SetDefaults(mod.ItemType("ExampleStaff"));
-                nextSlot++;
-            }
-            else {
-            }
-            // Here is an example of how your npc can sell items from other mods.
-            var modSummonersAssociation = ModLoader.GetMod("SummonersAssociation");
-            if (modSummonersAssociation != null) {
-                shop.item[nextSlot].SetDefaults(modSummonersAssociation.ItemType("BloodTalisman"));
-                nextSlot++;
-            }
-            }
-        */
-
+        }
         public override void TownNPCAttackStrength(ref int damage, ref float knockback) {
             damage = 20;
             knockback = 4f;
