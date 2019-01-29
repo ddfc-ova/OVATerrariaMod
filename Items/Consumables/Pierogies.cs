@@ -18,7 +18,7 @@ namespace OVATerrariaMod.Items.Consumables
             item.width = 20;
             item.height = 20;
             item.maxStack = 20;
-            item.value = 100;
+            item.value = 3500;
             item.rare = 1;
 			item.useStyle = 2;
 			item.consumable = true;
