@@ -145,16 +145,6 @@ namespace OVATerrariaMod.NPCs
             shop.item[nextSlot].SetDefaults(mod.ItemType("Pierogies"));
             nextSlot++;
             shop.item[nextSlot].SetDefaults(mod.ItemType("The Pole"));
-            nextSlot++;}
-           /*  shop.item[nextSlot].SetDefaults(mod.ItemType("EquipMaterial"));
-            nextSlot++;
-            shop.item[nextSlot].SetDefaults(mod.ItemType("BossItem"));
-            nextSlot++;
-            shop.item[nextSlot].SetDefaults(mod.ItemType("ExampleWorkbench"));
-            nextSlot++;
-            shop.item[nextSlot].SetDefaults(mod.ItemType("ExampleChair"));
-            nextSlot++;
-            shop.item[nextSlot].SetDefaults(mod.ItemType("Pierogies"));
             nextSlot++;
         }
         public override void TownNPCAttackStrength(ref int damage, ref float knockback) {
