@@ -38,7 +38,7 @@ namespace OVATerrariaMod.Items.Weapons
 		public override void OnHitNPC(Player player, NPC target, int damage, float knockback, bool crit) {
 			// Add Onfire buff to the NPC for 1 second
 			// 60 frames = 1 second
-			target.AddBuff(BuffID.Bleeding, 60);
+			target.AddBuff(BuffID.Webbed, 60);
 		}
 
 		// Star Wrath/Starfury style weapon. Spawn projectiles from sky that aim towards mouse.
