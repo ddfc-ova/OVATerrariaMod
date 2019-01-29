@@ -90,6 +90,15 @@ namespace OVATerrariaMod.NPCs
             }*/
         }
 
+                public override void OnChatButtonClicked(bool firstButton, ref bool openShop) //Allows you to make something happen whenever a button is clicked on this town NPC's chat window. The firstButton parameter tells whether the first button or second button (button and button2 from SetChatButtons) was clicked. Set the shop parameter to true to open this NPC's shop.
+        {
+ 
+            if (firstButton)
+            {
+                openShop = true;   //so when you click on buy button opens the shop
+            }
+        }
+
         public override string GetChat() {
             int partyGirl = NPC.FindFirstNPC(NPCID.PartyGirl);
             if (partyGirl >= 0 && Main.rand.NextBool(4)) {
@@ -130,8 +139,20 @@ namespace OVATerrariaMod.NPCs
             button = Language.GetTextValue("LegacyInterface.28");
         
         }
-        public override void SetupShop(Chest shop, ref int nextSlot) {
-            shop.item[nextSlot].SetDefaults(mod.ItemType("ThePole"));
+
+         public override void SetupShop(Chest shop, ref int nextSlot) 
+         {
+            shop.item[nextSlot].SetDefaults(mod.ItemType("Pierogies"));
+            nextSlot++;
+            shop.item[nextSlot].SetDefaults(mod.ItemType("The Pole"));
+            nextSlot++;}
+           /*  shop.item[nextSlot].SetDefaults(mod.ItemType("EquipMaterial"));
+            nextSlot++;
+            shop.item[nextSlot].SetDefaults(mod.ItemType("BossItem"));
+            nextSlot++;
+            shop.item[nextSlot].SetDefaults(mod.ItemType("ExampleWorkbench"));
+            nextSlot++;
+            shop.item[nextSlot].SetDefaults(mod.ItemType("ExampleChair"));
             nextSlot++;
             shop.item[nextSlot].SetDefaults(mod.ItemType("Pierogies"));
             nextSlot++;
