@@ -144,8 +144,8 @@ namespace OVATerrariaMod.NPCs
          {
             shop.item[nextSlot].SetDefaults(mod.ItemType("Pierogies"));
             nextSlot++;
-            shop.item[nextSlot].SetDefaults(mod.ItemType("The Pole"));
-            nextSlot++;
+            shop.item[nextSlot].SetDefaults(mod.ItemType("ThePole"));
+			nextSlot++;
         }
         public override void TownNPCAttackStrength(ref int damage, ref float knockback) {
             damage = 20;
