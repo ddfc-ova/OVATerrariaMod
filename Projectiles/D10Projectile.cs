@@ -14,8 +14,8 @@ namespace OVATerrariaMod.Projectiles
         public override void SetDefaults()
         {
 		projectile.arrow = true;
-		projectile.width = 30;
-		projectile.height = 30;
+		projectile.width = 15;
+		projectile.height = 15;
 		projectile.aiStyle = 14;
 		projectile.friendly = true;
 		projectile.ranged = true;
