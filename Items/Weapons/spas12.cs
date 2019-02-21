@@ -48,9 +48,10 @@ namespace OVATerrariaMod.Items.Weapons
         		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ItemID.TitaniumBar, 12);
+			recipe.AddIngredient(ItemID.TitaniumBar, 9);
 			recipe.AddIngredient(ItemID.Shotgun, 1);
 			recipe.AddIngredient(ItemID.SoulofFright, 15);
+            recipe.AddIngredient(ItemID.IllegalGunParts, 1);
 			recipe.AddTile(TileID.MythrilAnvil);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
