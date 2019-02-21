@@ -10,7 +10,7 @@ namespace OVATerrariaMod.Items.Weapons
         public override void SetStaticDefaults()
         {
             Tooltip.SetDefault("It's a Spas-12, it needs no further explaination.");
-            DisplayName.SetDefault("Spas 12");
+            DisplayName.SetDefault("Spas-12");
         }
 
  		public override void SetDefaults()
