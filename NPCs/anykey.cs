@@ -106,9 +106,9 @@ namespace OVATerrariaMod.NPCs
             }
             switch (Main.rand.Next(3)) {
                 case 0:
-                    return "ANYKEY IS HERE BITCHES!";
+                    return "ANYKEY IS HERE!";
                 case 1:
-                    return "You know, I used to have this friend named Cal. He was a fucking retard. Went to the dungeon one day and never came back.";
+                    return "You know, I used to have this friend named Cal. He was an idiot. Went to the dungeon one day and never came back.";
                 default:
                     return "POLAND NUMBA ONE!";
             }
