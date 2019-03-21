@@ -146,6 +146,8 @@ namespace OVATerrariaMod.NPCs
             nextSlot++;
             shop.item[nextSlot].SetDefaults(mod.ItemType("ThePole"));
 			nextSlot++;
+            shop.item[nextSlot].SetDefaults(mod.ItemType("sawedoffshotgun"));
+			nextSlot++;
         }
         public override void TownNPCAttackStrength(ref int damage, ref float knockback) {
             damage = 20;
