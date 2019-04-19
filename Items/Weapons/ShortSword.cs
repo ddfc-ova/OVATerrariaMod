@@ -25,21 +25,19 @@ namespace OVATerrariaMod.Items.Weapons
 			item.UseSound = SoundID.Item1;      //The sound when the weapon is using
 			item.autoReuse = true;          //Whether the weapon can use automatically by pressing mousebutton
 		}
-
-		public override void AddRecipes() {
-			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(mod.ItemType("DirtBlock"), 1);
-			recipe.AddIngredient(mod.ItemType("Wood"), 1);
-			recipe.AddTile(mod.TileType("WorkBenches"));
-			recipe.SetResult(this);
-			recipe.AddRecipe();
-		}
-
 		public override void MeleeEffects(Player player, Rectangle hitbox) {
 			if (Main.rand.NextBool(3)) {
 				//Emit dusts when swing the sword
 				Dust.NewDust(new Vector2(hitbox.X, hitbox.Y), hitbox.Width, hitbox.Height, mod.DustType("Sparkle"));
 			}
+		}
+				public override void AddRecipes()
+		{
+			ModRecipe recipe = new ModRecipe(mod);
+			recipe.AddIngredient(ItemID.LunarBar, 9);			
+			recipe.AddTile(TileID.LunarCraftingStation);	
+			recipe.SetResult(this);
+			recipe.AddRecipe();
 		}
 
 		public override void OnHitNPC(Player player, NPC target, int damage, float knockback, bool crit) {

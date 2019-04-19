@@ -1,4 +1,4 @@
-using Microsoft.Xna.Framework;
+/* using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -27,14 +27,7 @@ namespace OVATerrariaMod.Items.Weapons
 			item.useTurn = true;
 		}
 
-		public override void AddRecipes() {
-			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(mod.ItemType("SilverBar"), 5);
-			recipe.AddIngredient(mod.ItemType("SilverShortsword"), 1);
-			recipe.AddTile(mod.TileType("Anvils"));
-			recipe.SetResult(this);
-			recipe.AddRecipe();
-		}
+
 		public override Vector2? HoldoutOffset()
 		{
 			return new Vector2(2, 0);
@@ -42,7 +35,14 @@ namespace OVATerrariaMod.Items.Weapons
 			}
 		}
 
-	
+			public override void AddRecipes()
+		{
+			ModRecipe recipe = new ModRecipe(mod);
+			recipe.AddIngredient(ItemID.LunarBar, 9);			
+			recipe.AddTile(TileID.LunarCraftingStation);	
+			recipe.SetResult(this);
+			recipe.AddRecipe();
+		} 
 
 		// Star Wrath/Starfury style weapon. Spawn projectiles from sky that aim towards mouse.
 		// See Source code for Star Wrath projectile to see how it passes through tiles.

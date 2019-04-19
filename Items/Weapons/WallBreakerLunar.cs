@@ -3,23 +3,23 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace OVATerrariaMod.Items
+namespace OVATerrariaMod.Items.Weapons
 {
-	public class WallBreaker : ModItem
+	public class WallBreakerLunar : ModItem
 	{
 		public override void SetStaticDefaults() {
-			Tooltip.SetDefault("This hammer can break every wall you place, even the nonexistent 4th.");
-			DisplayName.SetDefault("4th Wall Breaking Hammer");
+			Tooltip.SetDefault("This hammer can break every wall you place, even the nonexistent 5th.");
+			DisplayName.SetDefault("5th Wall Breaking Hammer");
 		}
 
 		public override void SetDefaults() {
-			item.damage = 35;
+			item.damage = 65;
 			item.melee = true;
 			item.width = 40;
 			item.height = 40;
 			item.useTime = 15;
 			item.useAnimation = 15;        
-			item.hammer = 100;      //How much hammer power the weapon has
+			item.hammer = 500;      //How much hammer power the weapon has
 			item.useStyle = 1;
 			item.knockBack = 6;
 			item.value = 10000;
@@ -28,11 +28,13 @@ namespace OVATerrariaMod.Items
 			item.autoReuse = true;
 		}
 
-		public override void AddRecipes() {
+		public override void AddRecipes()
+		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(mod.TileType("SunplateBlock"), 10);
-			recipe.AddIngredient(mod.TileType("DiscWall"), 20);
-			recipe.AddTile(mod.TileType("Anvils"));
+			recipe.AddIngredient(null, "WallBreaker", 1);
+			recipe.AddIngredient(ItemID.FragmentSolar, 5);
+			recipe.AddIngredient(ItemID.FragmentNebula, 5);
+			recipe.AddTile(TileID.LunarCraftingStation);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
 		}

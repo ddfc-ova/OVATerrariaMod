@@ -5,11 +5,11 @@ using Terraria.ModLoader;
 
 namespace OVATerrariaMod.Items.Weapons
 {
-    public class HordeBreaker : ModItem
+    public class ChaosBreaker : ModItem
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Horde Breaker");
+            DisplayName.SetDefault("Chaos Breaker");
         }
 
         public override void SetDefaults()
@@ -39,8 +39,8 @@ namespace OVATerrariaMod.Items.Weapons
                 position += muzzleOffset;
             }
             
-            float numberProjectiles = 3 + Main.rand.Next(1); // 3, 4, or 5 shots
-            float rotation = MathHelper.ToRadians(20);
+            float numberProjectiles = 5 + Main.rand.Next(1); // 3, 4, or 5 shots
+            float rotation = MathHelper.ToRadians(30);
             position += Vector2.Normalize(new Vector2(speedX, speedY)) * 0f;
             for (int i = 0; i < numberProjectiles; i++)
             {
@@ -67,10 +67,10 @@ namespace OVATerrariaMod.Items.Weapons
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(null, "DredgensLongbow", 1);
-			recipe.AddIngredient(ItemID.AdamantiteBar, 14);
-			recipe.AddIngredient(ItemID.SoulofFright, 15);
-			recipe.AddTile(TileID.MythrilAnvil);
+			recipe.AddIngredient(ItemID.Emerald, 6);
+			recipe.AddIngredient(ItemID.SilverBar, 14);
+			recipe.AddIngredient(ItemID.Bone, 6);
+			recipe.AddTile(TileID.Anvils);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
 		}

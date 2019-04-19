@@ -1,7 +1,7 @@
-using Microsoft.Xna.Framework;
-using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+using Terraria;
+using Microsoft.Xna.Framework;
 
 namespace OVATerrariaMod.Items.Weapons
 {
@@ -27,11 +27,12 @@ namespace OVATerrariaMod.Items.Weapons
 			item.autoReuse = false;          //Whether the weapon can use automatically by pressing mousebutton
 		}
 
-		public override void AddRecipes() {
+		public override void AddRecipes()
+		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(mod.ItemType("IronBar"), 1);
-			recipe.AddIngredient(mod.ItemType("SilverBroadsword"), 1);
-			recipe.AddTile(mod.TileType("Anvils"));
+			recipe.AddIngredient(ItemID.IronBar, 9);		
+			recipe.AddIngredient(ItemID.SilverBroadsword, 9);		
+			recipe.AddTile(TileID.Anvils);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
 		}

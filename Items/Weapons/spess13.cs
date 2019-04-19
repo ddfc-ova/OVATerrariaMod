@@ -45,6 +45,10 @@ namespace OVATerrariaMod.Items.Weapons
 			}
 			return false; // return false because we don't want tmodloader to shoot projectile
 		}
+			public override Vector2? HoldoutOffset()
+		{
+			return new Vector2(0, 0);
+		}
         		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
