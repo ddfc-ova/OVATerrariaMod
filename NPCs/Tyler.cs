@@ -102,7 +102,7 @@ namespace OVATerrariaMod.NPCs
             }
             switch (Main.rand.Next(3)) {
                 case 0:
-                    return "Hi, cunt!";
+                    return "Have you seen any snakes around?";
                 case 1:
                     return "Hisssssssssssssssssssssssssssssssssssss";
                 default:
