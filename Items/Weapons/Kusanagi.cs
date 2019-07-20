@@ -13,7 +13,7 @@ namespace OVATerrariaMod.Items.Weapons
 		}
 
 		public override void SetDefaults() {
-			item.damage = 1;           //The damage of your weapon
+			item.damage = 30;           //The damage of your weapon
 			item.melee = true;          //Is your weapon a melee weapon?
 			item.width = 40;            //Weapon's texture's width
 			item.height = 40;           //Weapon's texture's height
