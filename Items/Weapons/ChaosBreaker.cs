@@ -23,8 +23,8 @@ namespace OVATerrariaMod.Items.Weapons
             item.useAnimation = 12;
             item.useStyle = 5; // Bow Use Style
             item.noMelee = true; // Doesn't deal damage if an enemy touches at melee range.
-            item.value = 10000; // Another way to handle value of item.
-            item.rare = 2;
+            item.value = 500000; // Another way to handle value of item.
+            item.rare = 10;
             item.UseSound = SoundID.Item5; // Sound for Bows
             item.useAmmo = AmmoID.Arrow; // The ammo used with this weapon
             item.shoot = 1;
@@ -67,10 +67,9 @@ namespace OVATerrariaMod.Items.Weapons
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ItemID.Emerald, 6);
-			recipe.AddIngredient(ItemID.SilverBar, 14);
-			recipe.AddIngredient(ItemID.Bone, 6);
-			recipe.AddTile(TileID.Anvils);
+		    recipe.AddIngredient(null, "HordeBreaker", 1);
+			recipe.AddIngredient(ItemID.LunarBar, 9);			
+			recipe.AddTile(TileID.LunarCraftingStation);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
 		}

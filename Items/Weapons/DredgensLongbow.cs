@@ -27,8 +27,8 @@ namespace OVATerrariaMod.Items.Weapons
             item.useAnimation = 12;
             item.useStyle = 5; // Bow Use Style
             item.noMelee = true; // Doesn't deal damage if an enemy touches at melee range.
-            item.value = 10000; // Another way to handle value of item.
-            item.rare = 2;
+            item.value = Item.buyPrice(gold: 1); // Another way to handle value of item.
+            item.rare = 3;
             item.UseSound = SoundID.Item5; // Sound for Bows
             item.useAmmo = AmmoID.Arrow; // The ammo used with this weapon
             item.shoot = 1;

@@ -22,8 +22,8 @@ namespace OVATerrariaMod.Items.Weapons
 			item.hammer = 500;      //How much hammer power the weapon has
 			item.useStyle = 1;
 			item.knockBack = 6;
-			item.value = 10000;
-			item.rare = 2;
+			item.value = 5000000;
+			item.rare = 10;
 			item.UseSound = SoundID.Item1;
 			item.autoReuse = true;
 		}

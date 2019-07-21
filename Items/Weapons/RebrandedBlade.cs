@@ -5,12 +5,12 @@ using Microsoft.Xna.Framework;
 
 namespace OVATerrariamod.Items.Weapons
 {
-	public class SnakeBlade : ModItem
+	public class RebrandedBlade : ModItem
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Snakeblade");
-			Tooltip.SetDefault("It sticks it's tounge out at you.");
+			DisplayName.SetDefault("Rebranded Blade");
+			Tooltip.SetDefault("The original design of this sword has been crudely covered up by spray paint, duct tape, and 2 gold star stickers.");
 		}
 		public override void SetDefaults()
 		{
@@ -22,8 +22,8 @@ namespace OVATerrariamod.Items.Weapons
 			item.useAnimation = 21;
 			item.useStyle = 1;
 			item.knockBack = 6;
-			item.value = 1000;
-			item.rare = 2;
+			item.value = 30000;
+			item.rare = 3;
 			item.UseSound = SoundID.Item1;
 			item.autoReuse = false;
 		}
@@ -31,9 +31,10 @@ namespace OVATerrariamod.Items.Weapons
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ItemID.Emerald, 8);
+			recipe.AddIngredient(ItemID.Ruby, 8);
 			recipe.AddIngredient(ItemID.JungleSpores, 8);
 			recipe.AddIngredient(ItemID.Stinger, 15);
+			recipe.AddIngredient(ItemID.Silk, 3);
 			recipe.AddTile(TileID.Anvils);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
